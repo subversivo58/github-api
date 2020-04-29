@@ -6,16 +6,16 @@
  */
 /* eslint valid-jsdoc: ["error", {"requireReturnDescription": false}] */
 
-import Gist from './Gist';
-import User from './User';
-import Issue from './Issue';
-import Search from './Search';
-import RateLimit from './RateLimit';
-import Repository from './Repository';
-import Organization from './Organization';
-import Team from './Team';
-import Markdown from './Markdown';
-import Project from './Project';
+import Gist from './Gist.js';
+import User from './User.js';
+import Issue from './Issue.js';
+import Search from './Search.js';
+import RateLimit from './RateLimit.js';
+import Repository from './Repository.js';
+import Organization from './Organization.js';
+import Team from './Team.js';
+import Markdown from './Markdown.js';
+import Project from './Project.js';
 
 /**
  * GitHub encapsulates the functionality to create various API wrapper objects.
@@ -140,4 +140,4 @@ class GitHub {
    }
 }
 
-module.exports = GitHub;
+export default GitHub;
