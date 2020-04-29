@@ -5,9 +5,18 @@
  *             Github.js is freely distributable.
  */
 
-import axios from 'axios';
-import debug from 'debug';
-import {Base64} from 'js-base64';
+/**
+ * Axios `import axios from 'axios';`
+ * Sorry, the "axios" library must be previously called by the common method as it does not yet have support for ES6 modules ... see the detailed
+ * description in the dependencies directory: @see https://github.com/subversivo58/github-api/tree/master/dependencies
+ */
+
+// es6 module refactored package dependency
+import {
+   Base64,
+} from './dependencies/js-base64.mjs';
+// simplest `console.debug` substitute of "debug" package dependency
+import debug from './dependencies/debug.mjs';
 
 const log = debug('github:request');
 
@@ -282,8 +291,6 @@ class Requestable {
    }
 }
 
-module.exports = Requestable;
-
 // ////////////////////////// //
 //  Private helper functions  //
 // ////////////////////////// //
@@ -323,3 +330,5 @@ function callbackErrorOrThrow(cb, path) {
       }
    };
 }
+
+export default Requestable;
