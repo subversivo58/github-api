@@ -5,7 +5,7 @@
  *             Github.js is freely distributable.
  */
 
-import Requestable from './Requestable';
+import Requestable from './Requestable.mjs';
 
 /**
  * Issue wraps the functionality to get issues for repositories
@@ -248,4 +248,4 @@ class Issue extends Requestable {
    }
 }
 
-module.exports = Issue;
+export default Issue;

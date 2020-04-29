@@ -5,7 +5,7 @@
  *             Github.js is freely distributable.
  */
 
-import Requestable from './Requestable';
+import Requestable from './Requestable.mjs';
 
 /**
  * Renders html from Markdown text
@@ -36,4 +36,4 @@ class Markdown extends Requestable {
    }
 }
 
-module.exports = Markdown;
+export default Markdown;

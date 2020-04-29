@@ -5,7 +5,7 @@
  *             Github.js is freely distributable.
  */
 
-import Requestable from './Requestable';
+import Requestable from './Requestable.js';
 
 /**
  * A Gist can retrieve and modify gists.
@@ -185,4 +185,4 @@ class Gist extends Requestable {
    }
 }
 
-module.exports = Gist;
+export default Gist;

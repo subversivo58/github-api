@@ -5,8 +5,9 @@
  *             Github.js is freely distributable.
  */
 
-import Requestable from './Requestable';
-import debug from 'debug';
+import Requestable from './Requestable.mjs';
+// simplest `console.debug` substitute of "debug" package dependency
+import debug from './dependencies/debug.mjs';
 const log = debug('github:team');
 
 /**
@@ -157,4 +158,4 @@ class Team extends Requestable {
    }
 }
 
-module.exports = Team;
+export default = Team;

@@ -5,7 +5,7 @@
  *             Github.js is freely distributable.
  */
 
-import Requestable from './Requestable';
+import Requestable from './Requestable.mjs';
 
 /**
  * Project encapsulates the functionality to create, query, and modify cards and columns.
@@ -233,4 +233,4 @@ class Project extends Requestable {
    }
 }
 
-module.exports = Project;
+export default Project;

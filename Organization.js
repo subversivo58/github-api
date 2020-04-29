@@ -5,7 +5,7 @@
  *             Github.js is freely distributable.
  */
 
-import Requestable from './Requestable';
+import Requestable from './Requestable.mjs';
 
 /**
  * Organization encapsulates the functionality to create repositories in organizations
@@ -118,4 +118,4 @@ class Organization extends Requestable {
    }
 }
 
-module.exports = Organization;
+export default Organization;

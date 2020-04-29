@@ -5,12 +5,15 @@
  *             Github.js is freely distributable.
  */
 
-import Requestable from './Requestable';
-import Utf8 from 'utf8';
+import Requestable from './Requestable.mjs';
+// es6 module refactored package dependency
+import Utf8 from './dependencies/utf8.mjs';
+// es6 module refactored package dependency
 import {
    Base64,
-} from 'js-base64';
-import debug from 'debug';
+} from './dependencies/js-base64.mjs';
+// simplest `console.debug` substitute of "debug" package dependency
+import debug from './dependencies/debug.mjs';
 const log = debug('github:repository');
 
 /**
@@ -896,4 +899,4 @@ class Repository extends Requestable {
 
 }
 
-module.exports = Repository;
+export default Repository;

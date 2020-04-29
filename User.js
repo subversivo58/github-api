@@ -6,7 +6,8 @@
  */
 
 import Requestable from './Requestable';
-import debug from 'debug';
+// simplest `console.debug` substitute of "debug" package dependency
+import debug from './dependencies/debug.mjs';
 const log = debug('github:user');
 
 /**
@@ -213,4 +214,4 @@ class User extends Requestable {
    }
 }
 
-module.exports = User;
+export default User;

@@ -5,7 +5,7 @@
  *             Github.js is freely distributable.
  */
 
-import Requestable from './Requestable';
+import Requestable from './Requestable.mjs';
 
 /**
  * RateLimit allows users to query their rate-limit status
@@ -32,4 +32,4 @@ class RateLimit extends Requestable {
    }
 }
 
-module.exports = RateLimit;
+export default RateLimit;
