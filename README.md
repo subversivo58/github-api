@@ -25,9 +25,9 @@ A low-level wrapper was designed to allow this: [see gist](https://gist.github.c
 
 ### Small size:
 
-The minified bundle from the original library contains all dependencies via the compiler and this makes its size around 90.2 kB ... this adaptation that does not support legacy browsers and does not support Node is only 28.7 kB.
+The minified bundle from the original library contains all dependencies via the compiler and this makes its size around 90.2 kB ... this adaptation that does not support legacy browsers and does not support Node is only 29.1 kB.
 
-Even at 14 kB from the "axios" module, it is still below half the original bundle with only 42.7 kB.
+Even at 14 kB from the "axios" module, it is still below half the original bundle with only 43.1 kB.
 
 
 ### Disclainer:
