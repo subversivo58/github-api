@@ -2,10 +2,29 @@
  * @copyright Copyright (c) 2020 Lauro Moraes <https://github.com/subversivo58>
  * @license  MIT <https://github.com/subversivo58/github-api/blob/master/LICENSE>
  */
+class debuggingLogger {
+    constructor(logPrefix) {
+        if ( logPrefix ) {
+            this.logPrefix = `%c[${logPrefix}]`;
+        }
+    }
 
-const debug = function() {
-    let args = Array.from(arguments);
-    console.debug.apply(console, args);
+    get log() {
+        const logPrefix = this.logPrefix;
+        if ( logPrefix.length ) {
+            return console.debug.bind(console, logPrefix, 'color:blue;');
+        } else {
+            return console.debug.bind(console);
+        }
+    }
+}
+
+const debug = function debug() {
+    if ( !(this instanceof debug) ) {
+        return new debug(arguments[0])
+    }
+    const debugLoger = new debuggingLogger(arguments[0])
+    return debugLoger.log;
 }
 
 export default debug;
