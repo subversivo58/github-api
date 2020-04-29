@@ -267,7 +267,19 @@ class Repository extends Requestable {
     * @return {Promise} - the promise for the http request
     */
    createBlob(content, cb) {
-      let postBody = this._getContentObject(content);
+      let postBody;
+      /**
+       * Hack to upload binary files to repository
+       * @see https://gist.github.com/subversivo58/9ad5273e931b3c223c4826c5ef5403f5
+       * @note:
+       *   -- inspired at article: @see https://medium.freecodecamp.org/pushing-a-list-of-files-to-the-github-with-javascript-b724c8c09b66
+       *   -- issue (not yet resolved): @see issue https://github.com/github-tools/github/issues/417
+       */
+      if ( typeof content === 'object' ) {
+          postBody = content;
+      } else {
+          postBody = this._getContentObject(content);
+      }
 
       log('sending content', postBody);
       return this._request('POST', `/repos/${this.__fullname}/git/blobs`, postBody, cb);
