@@ -15,7 +15,7 @@ The dependencies used here have been refactored to use only the essentials suppo
 
 The "debug" module has been completely replaced by a (very poor) function of `console.debug`.
 
-The "axios" module was the only dependency maintained in this adaptation because it was not possible to replicate its functionality with the standard search api `fetch ()`, nor to find a similar library that does not cause conflict and errors in the original Github.js library code.
+The "axios" module was the only dependency maintained in this adaptation because it was not possible to replicate its functionality with the standard search api `fetch()`, nor to find a similar library that does not cause conflict and errors in the original Github.js library code.
 
 
 It is assumed that the "axios" library must be previously linked by the standard method:
