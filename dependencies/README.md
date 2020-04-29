@@ -1,4 +1,4 @@
-## GiHub API dependencies with ES6 module (only browser)
+## GitHub API dependencies with ES6 module (only browser)
 
 
 The Github.js v3.3.0 original library has the following packages as a dependency:
