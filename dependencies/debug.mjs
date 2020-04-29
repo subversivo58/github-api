@@ -1,6 +1,6 @@
 /**
  * @copyright Copyright (c) 2020 Lauro Moraes <https://github.com/subversivo58>
- * @license  MIT <https://github.com/subversivo58/github-api/blob/master/LICENSE>
+ * @license  MIT License <https://github.com/subversivo58/subversivo58.github.io/blob/master/LICENSE>
  */
 class debuggingLogger {
     constructor(logPrefix) {
