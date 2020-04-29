@@ -151,7 +151,7 @@ if (typeof Object.defineProperty === 'function') {
     var noEnum = function(v){
         return {value:v,enumerable:false,writable:true,configurable:true};
     };
-    global.Base64.extendString = function () {
+    _Base64.extendString = function () {
         Object.defineProperty(
             String.prototype, 'fromBase64', noEnum(function () {
                 return decode(this)
@@ -168,4 +168,4 @@ if (typeof Object.defineProperty === 'function') {
 }
 
 // that's it!
-export default {Base64: _Base64}
+export {_Base64 as Base64};
