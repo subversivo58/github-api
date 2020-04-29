@@ -23,6 +23,13 @@ You can see these changes on the [following lines](https://github.com/subversivo
 A low-level wrapper was designed to allow this: [see gist](https://gist.github.com/subversivo58/9ad5273e931b3c223c4826c5ef5403f5)
 
 
+### Small size:
+
+The minified bundle from the original library contains all dependencies via the compiler and this makes its size around 90.2 kB ... this adaptation that does not support legacy browsers and does not support Node is only 28.7 kB.
+
+Even at 14 kB from the "axios" module, it is still below half the original bundle with only 42.7 kB.
+
+
 ### Disclainer:
 
 The original library is distributed under the BSD-3-Clause License, so this adaptation, which uses practically all the original code, is also distributed under the same license.
