@@ -9,6 +9,10 @@ This is a free adaptation of the amazing [Github.js](https://github.com/github-t
 
 This project was based on version [3.3.0](https://github.com/github-tools/github/tree/v3.3.0) and it is not based on a fork so there is no forecast for immediate updates from updates from the original source.
 
+### How to use:
+
+See original [Github.js](https://github.com/github-tools/github#usage) repo for more information about use and documentation api.
+
 
 ### Upload binary files:
 
