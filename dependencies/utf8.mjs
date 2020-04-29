@@ -1,4 +1,9 @@
-/*! https://mths.be/utf8js v3.0.0 by @mathias */
+/**
+ * @source https://github.com/mathiasbynens/utf8.js
+ * @copyright Copyright (c) Mathias Bynens <https://mathiasbynens.be/>
+ * @license  MIT <https://github.com/mathiasbynens/utf8.js/blob/master/LICENSE-MIT.txt>
+ * @version  v3.0.0 <https://github.com/mathiasbynens/utf8.js/releases/tag/v3.0.0>
+ */
 
 const root = {};
 
